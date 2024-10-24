@@ -11,4 +11,50 @@
 --carnation-pink: #ffafccff;
 --uranian-blue: #bde0feff;
 --light-sky-blue: #a2d2ffff;
+
+}
+body{
+    font-family: var(--carnation-pink);
+    background-color: var(--fairy-tale);
+    color: var(--light-sky-blue);
+    height: 100vh;
+}
+
+header{
+    background-color: var(--uranian-blue);
+    text-align: center;
+}
+
+h1{
+    font-family: var(--light-sky-blue);
+    font-size: 2rem;
+    color: var(--thistle);
+    padding: 1.2rem 0;
+}
+
+nav{
+    display: flex;
+    justify-content:center;
+    font-weight: 400;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--light-sky-blue);
+    margin: 0 2rem 1rem 0;
+}
+
+nav a :hover{
+    text-decoration: underline;
+    transform: scale(0.90);
+    transition: transform 0.3s ;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--uranian-blue);
+    color: chocolate;
+    width: 100%;
 }
