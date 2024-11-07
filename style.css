@@ -57,6 +57,8 @@ footer{
     background-color: var(--uranian-blue);
     color: chocolate;
     width: 100%;
+    position: fixed;
+    bottom: 0;
     height: 3rem;
     margin-top: 2rem;
 }
