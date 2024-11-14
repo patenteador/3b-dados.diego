@@ -1,65 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
-.root{
-    font-family: "Roboto", sans-serif;
-    --thistle: #cdb4dbff;
---fairy-tale: #ffc8ddff;
---carnation-pink: #ffafccff;
---uranian-blue: #bde0feff;
---light-sky-blue: #a2d2ffff;
-
+:root {
+    --fonte-titulo: "Bebas Neue", sans-serif;
+    --fonte-texto: "Dosis", sans-serif;
+    --cor1: #2c6e49ff;
+    --cor2: #4c956cff;
+    --cor3: #fefee3ff;
+    --cor4: #ffc9b9ff;
+    --cor5: #d68c45ff;
+    --cor6: #000000;
 }
 body{
-    font-family: var(--carnation-pink);
-    background-color: var(--fairy-tale);
-    color: var(--light-sky-blue);
+    font-family: var(--fonte-texto);
+    background-color: var(--cor4);
+    color: var(--cor6);
     height: 100vh;
 }
-
 header{
-    background-color: var(--uranian-blue);
+    background-color: var(--cor1);
     text-align: center;
 }
-
 h1{
-    font-family: var(--light-sky-blue);
-    font-size: 2rem;
-    color: var(--thistle);
+    font-family: var(--fonte-titulo);
+    font-size: 2.4rem;
     padding: 1.2rem 0;
+    color: var(--cor3);
 }
-
 nav{
     display: flex;
-    justify-content:center;
+    justify-content: center;
     font-weight: 400;
 }
-
 nav a{
     text-decoration: none;
-    color: var(--light-sky-blue);
-    margin: 0 2rem 1rem 0;
+    color: var(--cor3);
+    margin: 0 2em 1em 0;
+    font-size: 1.5em
+}
+nav a:hover{
+    text-decoration: underline;
+    font-size: 1.7em;
+    color: var(--cor4);
+    transition: 0.5s;
 }
 
-nav a :hover{
-    text-decoration: underline;
-    transform: scale(0.90);
-    transition: transform 0.3s ;
+.caixa-grafico{
+    margin: 3em;
+    border: 3px double var(--cor6);
+    background-color: var(--cor3);
+}
+
+.caixa-grafico__texto{
+    padding: 2em;
+    font-size: 1.3em;
+    text-align: center;
 }
 
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--uranian-blue);
-    color: chocolate;
+    background-color: var(--cor1);
+    color: var(--cor3);
     width: 100%;
     position: fixed;
     bottom: 0;
-    height: 3rem;
-    margin-top: 2rem;
+    padding: 1em;
 }
-
